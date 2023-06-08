@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main  item1  item2"
+    "sidebar  melchor  pepito  item3"
+    "footer   footer   footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 50px;
+    height: 100vh;
+}
+.header{
+    grid-area: header;
+    background-image: url("./assets/img/goku-ultra-instinto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(68, 120, 133);
+
+}
+.main{
+    grid-area: main;
+    background-image: url("./assets/img/GUEST_cbf17e76-007d-4ece-88fc-2df8b50ee729.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    background-size:contain;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: burlywood;
+}
+.sidebar-nav{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(55, 121, 55, 0.671);
+    color: brown;
+    border-radius: 10px;
+    gap: 10px;
+}
+.sidebar-nav:hover{
+    background-color: rgb(0, 255, 85);
+}
+.item1{
+    grid-area: item1;
+    background-image: url("./assets/img/61FWknu20ML._AC_SL1500_.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    background-position-x: center;
+}
+
+
+.item2{
+    grid-area: item2;
+    background-image: url("./assets/img/figura-mazinger-z-internal-structure-banpresto-bandai.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:contain;
+}
+.item3{
+    grid-area: item3;
+    background-image: url("./assets/img/44043788976158.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:contain;
+}
+.pepito{
+    grid-area: pepito;
+    background-image: url("./assets/img/D_977260-MLA44622019177_012021-F.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:contain;
+}
+.melchor{
+    grid-area: melchor;
+    background-image: url("./assets/img/goku-41-966b8310f4d44f0fe015978628959387-640-0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:contain;
+}
+.section{
+    flex-wrap: wrap;
+    background-color: blue;
+}
